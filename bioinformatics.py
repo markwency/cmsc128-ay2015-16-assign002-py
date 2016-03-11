@@ -76,6 +76,7 @@ def getMaxSkewN(str1, n):
 	for i in range(1, n+1):	#set range of i from 1 to n+1
 		holder = getSkew(str1, i)	#calls getskew, then save the return value to holder
 		if maxFound is "NotFound":	#if max is not found, save holder to max
+			maxFound = "Found"			
 			maxHolder = holder
 		if maxHolder < holder:	#if holder is larger tham maxHolder, save holder to maxHolder
 			maxHolder = holder
@@ -94,6 +95,7 @@ def getMinSkewN(str1, n):
 	for i in range(1, n+1):	#set range of i from 1 to n+1
 		holder = getSkew(str1, i)	#calls getskew, then save the return value to holder
 		if minFound is "NotFound":	#if min is not found, save holder to min
+			minFound = "Found"			
 			minHolder = holder
 		if minHolder > holder:	#if holder is less than tham minHolder, save holder to minHolder
 			minHolder = holder
